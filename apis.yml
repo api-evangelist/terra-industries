@@ -1,7 +1,29 @@
 aid: terra-industries
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/terra-industries.png
 name: Terra Industries
-description: Terra Industries is a company surfaced as a portfolio company of 8vc and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Terra Industries is a Nigeria-based defense-technology company, positioning itself as
+  Africa's first defense prime, that designs, manufactures, and deploys autonomous multi-domain
+  security systems across air, land, and eventually sea. Founded in 2024 by Nathan Nwachuku and
+  Maxwell Maduka, the company builds ArtemisOS (an AI-powered operating system for infrastructure
+  security), the Archer long-range VTOL surveillance drone, the Iroko modular UAV, the Duma
+  autonomous unmanned ground vehicle, and the Kallon solar-powered AI sentry tower to monitor,
+  detect, and respond to threats such as terrorism, sabotage, and armed attacks on critical
+  infrastructure including hydropower plants, mines, and power assets. Terra raised $11.75M led
+  by 8VC in January 2026. As a hardware and defense-systems manufacturer it publishes no public
+  API, developer portal, or technical documentation surface; this profile is maintained as a
+  company/provider record in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/terra-industries/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Defense
+- Defense Technology
+- Autonomous Systems
+- Drones
+- Robotics
+- Security
+- Hardware
+- Artificial Intelligence
+- Africa
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,19 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/terra-industries-domain-security.yml
 - type: Website
   url: https://terraindustries.co
+- type: Portfolio
+  url: https://8vc.com/companies/terra-industries
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+  notes: >-
+    Defense hardware manufacturer (autonomous drones, UGVs, sentry towers, ArtemisOS). No public
+    API, developer portal, docs, OpenAPI, well-known, VDP, or trust-center surface (all 404 /
+    non-resolving; confirmed via WebSearch + homepage fetch + live probes). Only real artifact:
+    probed domain-security (TLS1.3/HSTS/CAA; no SPF/DMARC/DNSSEC). apis.yml identity/hygiene improved.
